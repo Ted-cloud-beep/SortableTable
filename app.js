@@ -38,13 +38,23 @@ function sortTableByColumn(column, para) {
     toggle(para);
   }
 }
+function reset() {
+  rank.classList.remove("ascending");
+  name.classList.remove("ascending");
+  age.classList.remove("ascending");
+  rank.classList.remove("decending");
+  name.classList.remove("decending");
+  age.classList.remove("decending");
+}
 function toggle(para) {
+  reset();
   para.classList.remove("decending");
   para.classList.add("ascending");
   // const downRank = document.getElementById("down1");
   // downRank.style.display = "inline-block";
 }
 function toggle1(para) {
+  reset();
   para.classList.remove("ascending");
   para.classList.add("decending");
 }
@@ -58,3 +68,7 @@ age.addEventListener("click", sortTableByColumn.bind(null, 3, age));
 
 const rank = document.querySelector("table tr").children[0];
 rank.addEventListener("click", sortTableByColumn.bind(null, 1, rank));
+
+// console.log(a);
+
+// const a = 9;
