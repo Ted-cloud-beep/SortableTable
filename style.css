@@ -2,12 +2,16 @@ table {
   border-collapse: collapse;
   min-width: 500px;
 }
+
 .table thead tr {
   text-align: left;
   border: 1px solid #444;
   background-color: #10316b;
   color: #dee1ec;
   cursor: pointer;
+}
+.table thead tr th {
+  min-width: 50px;
 }
 .table thead tr th:first-child {
   text-align: center;
