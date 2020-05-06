@@ -1,0 +1,34 @@
+table {
+  border-collapse: collapse;
+  min-width: 500px;
+}
+.table thead tr {
+  text-align: left;
+  border: 1px solid #444;
+  background-color: #10316b;
+  color: #dee1ec;
+  cursor: pointer;
+}
+.table thead tr th:first-child {
+  text-align: center;
+}
+
+#down1 {
+  display: none;
+}
+.table tr th {
+  text-align: left;
+  padding: 4px;
+}
+table tbody tr {
+  border: 1px solid #444;
+}
+table tbody tr td:first-child {
+  text-align: center;
+}
+table thead tr th.ascending::after {
+  content: "\25be";
+}
+table thead tr th.decending::after {
+  content: "\25b4";
+}
